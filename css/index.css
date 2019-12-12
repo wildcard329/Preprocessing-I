@@ -137,14 +137,83 @@ body {
 }
 header {
   background-color: lightblue;
+  padding: 3%;
+  padding-left: 42%;
+}
+header img {
+  width: 35%;
+}
+header div {
+  width: 140%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-header .h-text p {
-  width: 15%;
+header p {
+  font-size: 0.75rem;
+  width: 30%;
 }
-header .h-text h1 {
+header h1 {
+  width: 100%;
   font-size: 2rem;
+  font-style: bold;
 }
-header .h-text h3 {
+header h3 {
   font-size: 1.2rem;
+}
+header button {
+  width: 20%;
+}
+#about {
+  background-color: #fcfca0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 0;
+}
+#about div {
+  width: 30%;
+}
+#about div h3 {
+  font-style: bold;
+  padding: 5%;
+}
+#about div p {
+  margin-top: 3%;
+  font-size: 0.75rem;
+}
+#exp {
+  background-color: lightpink;
+  padding: 5% 3%;
+}
+#exp div {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+}
+#exp img {
+  width: 75%;
+}
+#edu {
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: lightsteelblue;
+}
+#edu h3 {
+  font-size: 1.2rem;
+}
+#edu ul {
+  list-style-type: square;
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+#edu li {
+  margin-left: 7%;
+}
+#contact {
+  display: flex;
+  background-color: limegreen;
+  justify-content: space-around;
 }

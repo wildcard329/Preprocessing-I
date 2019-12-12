@@ -1,1 +1,297 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+header {
+  background-color: lightblue;
+  padding: 3%;
+  padding-left: 42%;
+}
+@media (max-width: 500px) {
+  header {
+    padding: 0;
+  }
+}
+header img {
+  width: 35%;
+}
+@media (max-width: 800px) {
+  header img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  header img {
+    width: 100%;
+  }
+}
+header div {
+  width: 140%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header p {
+  font-size: 0.75rem;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  header p {
+    width: 75%;
+  }
+}
+header h1 {
+  width: 100%;
+  font-size: 2rem;
+  font-style: bold;
+}
+@media (max-width: 500px) {
+  header h1 {
+    width: 75%;
+  }
+}
+header h3 {
+  font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  header h3 {
+    width: 75%;
+  }
+}
+header button {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  header button {
+    display: none;
+  }
+}
+#about {
+  background-color: #fcfca0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5% 0;
+}
+@media (max-width: 500px) {
+  #about {
+    flex-direction: column;
+  }
+}
+#about div {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  #about div {
+    width: 100%;
+  }
+}
+#about div h3 {
+  font-style: bold;
+  padding: 5%;
+}
+#about div p {
+  margin-top: 3%;
+  font-size: 0.75rem;
+}
+@media (max-width: 800px) {
+  #exp {
+    display: none;
+    background-color: lightpink;
+    padding: 5% 3%;
+  }
+}
+#exp div {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  #exp div {
+    flex-direction: column;
+  }
+}
+#exp img {
+  width: 75%;
+}
+@media (max-width: 800px) {
+  #exp img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #exp img {
+    width: 100%;
+  }
+}
+#edu {
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: lightsteelblue;
+}
+@media (max-width: 500px) {
+  #edu {
+    flex-direction: column;
+  }
+}
+#edu h3 {
+  font-size: 1.2rem;
+}
+#edu ul {
+  list-style-type: square;
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  #edu ul {
+    padding: 4%;
+  }
+}
+#edu li {
+  margin-left: 7%;
+}
+#contact {
+  display: flex;
+  background-color: limegreen;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  #contact {
+    flex-direction: column;
+  }
+}

@@ -140,8 +140,23 @@ header {
   padding: 3%;
   padding-left: 42%;
 }
+@media (max-width: 500px) {
+  header {
+    padding: 0;
+  }
+}
 header img {
   width: 35%;
+}
+@media (max-width: 800px) {
+  header img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  header img {
+    width: 100%;
+  }
 }
 header div {
   width: 140%;
@@ -153,16 +168,36 @@ header p {
   font-size: 0.75rem;
   width: 30%;
 }
+@media (max-width: 500px) {
+  header p {
+    width: 75%;
+  }
+}
 header h1 {
   width: 100%;
   font-size: 2rem;
   font-style: bold;
 }
+@media (max-width: 500px) {
+  header h1 {
+    width: 75%;
+  }
+}
 header h3 {
   font-size: 1.2rem;
 }
+@media (max-width: 500px) {
+  header h3 {
+    width: 75%;
+  }
+}
 header button {
   width: 20%;
+}
+@media (max-width: 500px) {
+  header button {
+    display: none;
+  }
 }
 #about {
   background-color: #fcfca0;
@@ -170,8 +205,18 @@ header button {
   justify-content: space-evenly;
   padding: 5% 0;
 }
+@media (max-width: 500px) {
+  #about {
+    flex-direction: column;
+  }
+}
 #about div {
   width: 30%;
+}
+@media (max-width: 500px) {
+  #about div {
+    width: 100%;
+  }
 }
 #about div h3 {
   font-style: bold;
@@ -181,17 +226,35 @@ header button {
   margin-top: 3%;
   font-size: 0.75rem;
 }
-#exp {
-  background-color: lightpink;
-  padding: 5% 3%;
+@media (max-width: 800px) {
+  #exp {
+    display: none;
+    background-color: lightpink;
+    padding: 5% 3%;
+  }
 }
 #exp div {
   display: flex;
   justify-content: space-around;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  #exp div {
+    flex-direction: column;
+  }
+}
 #exp img {
   width: 75%;
+}
+@media (max-width: 800px) {
+  #exp img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #exp img {
+    width: 100%;
+  }
 }
 #edu {
   padding: 5% 0;
@@ -199,6 +262,11 @@ header button {
   justify-content: space-evenly;
   align-items: center;
   background-color: lightsteelblue;
+}
+@media (max-width: 500px) {
+  #edu {
+    flex-direction: column;
+  }
 }
 #edu h3 {
   font-size: 1.2rem;
@@ -209,6 +277,11 @@ header button {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  #edu ul {
+    padding: 4%;
+  }
+}
 #edu li {
   margin-left: 7%;
 }
@@ -216,4 +289,9 @@ header button {
   display: flex;
   background-color: limegreen;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  #contact {
+    flex-direction: column;
+  }
 }

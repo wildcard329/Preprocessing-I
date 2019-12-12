@@ -62,8 +62,17 @@ header {
 	background-color: lightblue;
 	padding: 3%;
 	padding-left: 42%;
+	@media (max-width:500px) {
+		padding: 0;
+	}
 	img {
 		width: 35%;
+		@media(max-width:800px) {
+			display: none;
+		}
+		@media (max-width:500px) {
+			width: 100%;
+		}
 	}
 	div {
 		width: 140%;
@@ -74,17 +83,29 @@ header {
 	p {
 		font-size: .75rem;
 		width: 30%;
+		@media (max-width:500px) {
+			width: 75%;
+		}
 	}
 	h1 {
 		width: 100%;
 		font-size: 2rem;
 		font-style: bold;
+		@media (max-width: 500px){
+			width: 75%;
+		}
 	}
 	h3 {
 		font-size: 1.2rem;
+		@media (max-width: 500px) {
+			width: 75%;
+		}
 	}
 	button {
 		width: 20%;
+		@media (max-width:500px) {
+			display: none;
+		}
 	}
 }
 
@@ -97,8 +118,14 @@ header {
 	display: flex;
 	justify-content: space-evenly;
 	padding: 5% 0;
+	@media (max-width:500px) {
+		flex-direction: column;
+	}
 	div {
 		width: 30%;
+		@media (max-width: 500px) {
+			width: 100%;
+		}
 		h3 {
 			font-style: bold;
 			padding: 5%;
@@ -111,16 +138,28 @@ header {
 }
 
 #exp {
+	@media(max-width:800px) {
+		display: none;
 	background-color: lightpink;
 	padding: 5% 3%;
+	}
 	div {
 		display: flex;
 		justify-content: space-around;
 		padding: 1%;
+		@media (max-width:500px) {
+			flex-direction: column;
+		}
 	}
 
 	img {
 		width: 75%;
+		@media(max-width:800px) {
+			display: none;
+		}
+		@media(max-width:500px) {
+			width: 100%;
+		}
 	}
 }
 
@@ -130,6 +169,9 @@ header {
 	justify-content: space-evenly;
 	align-items: center;
 	background-color: lightsteelblue;
+	@media(max-width:500px) {
+		flex-direction: column;
+	}
 	
 	h3 {
 		font-size: 1.2rem;
@@ -139,6 +181,9 @@ header {
 		font-size: .5rem;
 		display: flex;
 		flex-direction: column;
+		@media (max-width:500px) {
+			padding: 4%;
+		}
 		}
 		li {
 			margin-left: 7%;
@@ -150,4 +195,7 @@ header {
 	display: flex;
 	background-color: limegreen;
 	justify-content: space-around;
+	@media (max-width:500px) {
+		flex-direction: column;
+	}
 }
